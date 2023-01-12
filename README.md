@@ -1,7 +1,7 @@
 # Financial Management System
-###Author: Cuong Nguyen
-###Side projects from scratch...
-###General Functionalities:
+### Author: Cuong Nguyen
+### Side projects from scratch...
+### General Functionalities:
 
 - Login/Logout
 - Overview Section
@@ -10,17 +10,17 @@
 - Retirement Section
 
 ### Overview Section:
-####Ability to see main sections in one area
+#### Ability to see main sections in one area
 
-###Stock Section:
+### Stock Section:
 
 (Ability to load/create existing portfolio?)
 - Enter stock
 - View stock
 
-###Networth Section
+### Networth Section
 
-###Retirement Section
+### Retirement Section
 
 
 
