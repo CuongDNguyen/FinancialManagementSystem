@@ -18,6 +18,7 @@ public class StockController {
     @GetMapping(value = "/getStockBySymbol", produces = "application/json")
     public Mono getStockBySymbol(@RequestParam String stockSymbol) {
         try {
+            log.info("Getting stock by symbol: {}", stockSymbol);
             String YAHOO_URL = "https://query1.finance.yahoo.com/v11/finance/quoteSummary/" + stockSymbol + "?modules=financialData";
             WebClient client = WebClient.create();
 
