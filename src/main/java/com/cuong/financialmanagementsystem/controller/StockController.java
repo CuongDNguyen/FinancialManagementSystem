@@ -15,8 +15,8 @@ import reactor.core.publisher.Mono;
 @Slf4j
 public class StockController {
 
-    @GetMapping(value = "/view-stocks", produces = "application/json")
-    public Mono viewStocks(@RequestParam String stockSymbol) {
+    @GetMapping(value = "/getStockBySymbol", produces = "application/json")
+    public Mono getStockBySymbol(@RequestParam String stockSymbol) {
         try {
             String YAHOO_URL = "https://query1.finance.yahoo.com/v11/finance/quoteSummary/" + stockSymbol + "?modules=financialData";
             WebClient client = WebClient.create();
