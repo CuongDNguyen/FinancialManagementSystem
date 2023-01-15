@@ -1,15 +1,16 @@
 package com.cuong.financialmanagementsystem.service;
 
 import com.cuong.financialmanagementsystem.client.YahooClient;
+import com.cuong.financialmanagementsystem.model.YahooStock;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 public class StockImpl implements StockRepository{
 
-    private YahooClient stockClient = new YahooClient();
+    private YahooClient yahooClient = new YahooClient();
 
     public String viewStock(String accountId) {
-        stockClient.getStocksBySymbol("AAPL");
+        yahooClient.getDataBySymbol("test");
         return "view stock";
     }
 
